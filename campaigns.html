@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Daily Campaigns | Desire to Succeed Charitable Trust</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="wrapper">
+    <aside class="sidebar" aria-label="Primary navigation">
+      <div class="logo"><i class="fa-solid fa-hand-holding-heart"></i><h4>Desire to Succeed Charitable Trust</h4></div>
+      <ul>
+        <li><a href="dashboard.html"><i class="fa-solid fa-chart-line"></i><span>Dashboard</span></a></li><li><a href="donations.html"><i class="fa-solid fa-indian-rupee-sign"></i><span>Donations</span></a></li><li><a href="volunteers.html"><i class="fa-solid fa-users"></i><span>Volunteers</span></a></li><li><a href="projects.html"><i class="fa-solid fa-folder-open"></i><span>Projects</span></a></li><li class="active"><a aria-current="page" href="campaigns.html"><i class="fa-solid fa-calendar-days"></i><span>Campaigns</span></a></li><li><a class="logout-btn" href="index.html"><i class="fa-solid fa-right-from-bracket"></i><span>Log out</span></a></li>
+      </ul>
+    </aside>
+    <main id="main-content" class="main-content">
+      <header class="topbar"><div><h1>Daily campaigns</h1><p>Plan and manage service activities across the Braj region.</p></div><div class="top-icons"><button class="icon-button" type="button" aria-label="Calendar"><i class="fa-regular fa-calendar"></i></button></div></header>
+      <section class="campaign-banner"><div><p id="campaignDate">Today</p><h2>Serving the Braj region, every day.</h2><span id="campaignSummary">0 campaigns · 0 volunteers scheduled</span></div><i class="fa-solid fa-map-location-dot" aria-hidden="true"></i></section>
+      <section class="table-card campaign-form-card" aria-labelledby="campaign-form-title"><h2 id="campaign-form-title">Add a campaign</h2><form id="campaignForm" class="form-grid"><div class="field"><label for="campaignTitle">Campaign name</label><input id="campaignTitle" name="campaignTitle" class="form-control" required placeholder="e.g. Health check-up camp"></div><div class="field"><label for="campaignTime">Start time</label><input id="campaignTime" name="campaignTime" class="form-control" type="time" required></div><div class="field"><label for="campaignLocation">Location</label><input id="campaignLocation" name="campaignLocation" class="form-control" required placeholder="Venue or area"></div><div class="field"><label for="campaignVolunteers">Volunteers</label><input id="campaignVolunteers" name="campaignVolunteers" class="form-control" type="number" min="1" required></div><button class="btn btn-success" type="submit"><i class="fa-solid fa-plus"></i> Add campaign</button></form></section>
+      <section id="campaignList" class="campaign-list" aria-label="Today's campaigns"></section>
+      <footer class="dashboard-footer"><p>© 2026 Desire to Succeed Charitable Trust</p></footer>
+    </main>
+  </div>
+  <script src="js/app.js"></script><script src="js/campaigns.js"></script>
+</body>
+</html>

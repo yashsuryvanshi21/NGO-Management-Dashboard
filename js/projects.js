@@ -1,0 +1,1 @@
+(() => { const search = document.querySelector("#searchProject"); const cards = [...document.querySelectorAll("#projectContainer [data-project]")]; if (!search) return; search.addEventListener("input", () => { const query = search.value.trim().toLowerCase(); cards.forEach(card => { card.hidden = !card.textContent.toLowerCase().includes(query); }); }); })();

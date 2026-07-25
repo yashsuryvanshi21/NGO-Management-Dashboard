@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard | Desire to Succeed Charitable Trust</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body class="dashboard-page">
+  <div class="dashboard-shell">
+    <aside class="dash-sidebar" aria-label="Primary navigation">
+      <a class="brand" href="dashboard.html"><i class="fa-solid fa-heart"></i><span>Desire to Succeed Charitable Trust</span></a>
+      <nav>
+        <a class="nav-item active" aria-current="page" href="dashboard.html"><i class="fa-solid fa-chart-line"></i> Overview</a>
+        <a class="nav-item" href="donations.html"><i class="fa-solid fa-hand-holding-heart"></i> Donations</a>
+        <a class="nav-item" href="volunteers.html"><i class="fa-solid fa-users"></i> Volunteers</a>
+        <a class="nav-item" href="projects.html"><i class="fa-solid fa-folder"></i> Projects</a>
+        <a class="nav-item" href="campaigns.html"><i class="fa-solid fa-calendar"></i> Campaigns</a>
+      </nav>
+      <a class="signout" href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Sign out</a>
+    </aside>
+
+    <main class="dashboard-main">
+      <header class="dash-header">
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+        <div>
+          <p class="page-kicker">Dashboard</p>
+          <h1>Good morning, Admin</h1>
+        </div>
+        <div class="profile"><img src="admin.jpg" alt="Administrator"><span>Admin</span></div>
+      </header>
+
+      <section class="summary" aria-label="Monthly summary">
+        <div><p>July 2026 overview</p><h2>Your work is reaching more people.</h2><span>Here is a quick look at this month's activity.</span></div>
+        <a href="donations.html">View donations <i class="fa-solid fa-arrow-right"></i></a>
+      </section>
+
+      <section class="metric-grid" aria-label="Dashboard statistics">
+        <article class="metric-card"><span class="metric-icon green"><i class="fa-solid fa-indian-rupee-sign"></i></span><div><p>Total donations</p><h2>₹50.48L</h2><small>18% more than last month</small></div></article>
+        <article class="metric-card"><span class="metric-icon blue"><i class="fa-solid fa-users"></i></span><div><p>Active volunteers</p><h2>26</h2><small>4 joined this month</small></div></article>
+        <article class="metric-card"><span class="metric-icon orange"><i class="fa-solid fa-folder"></i></span><div><p>Projects running</p><h2>11</h2><small>2 ending this month</small></div></article>
+        <article class="metric-card"><span class="metric-icon red"><i class="fa-solid fa-heart"></i></span><div><p>Lives impacted</p><h2>200</h2><small>32 new this month</small></div></article>
+      </section>
+
+      <section class="dashboard-grid">
+        <article class="panel activity-panel">
+          <div class="panel-heading"><div><p class="page-kicker">Donations</p><h2>Monthly activity</h2></div><button type="button">Last 6 months <i class="fa-solid fa-chevron-down"></i></button></div>
+          <div class="bar-chart" aria-label="Donations rose from 4.5 lakh in February to 12.5 lakh in July">
+            <div class="bar-set"><i style="height:36%"></i><span>Feb</span></div><div class="bar-set"><i style="height:52%"></i><span>Mar</span></div><div class="bar-set"><i style="height:42%"></i><span>Apr</span></div><div class="bar-set"><i style="height:65%"></i><span>May</span></div><div class="bar-set"><i style="height:58%"></i><span>Jun</span></div><div class="bar-set current"><i style="height:86%"></i><span>Jul</span></div>
+          </div>
+        </article>
+        <article class="panel">
+          <div class="panel-heading"><div><p class="page-kicker">Projects</p><h2>Project status</h2></div><a class="view-link" href="projects.html">View all</a></div>
+          <div class="status-list"><div><span class="status-dot complete"></span><p>Completed</p><strong>5</strong></div><div><span class="status-dot progress"></span><p>In progress</p><strong>2</strong></div><div><span class="status-dot planned"></span><p>Planned</p><strong>4</strong></div></div>
+          <p class="project-note"><strong>2 projects</strong> are expected to finish by the end of July.</p>
+        </article>
+      </section>
+
+      <section class="content-grid">
+        <article class="panel">
+          <div class="panel-heading"><div><p class="page-kicker">Latest support</p><h2>Recent donations</h2></div><a class="view-link" href="donations.html">View all</a></div>
+          <div class="donation-list"><div class="donor"><span>RS</span><div><strong>Rahul Sharma</strong><small>Today, 10:42 AM</small></div><b>+ ₹10,000</b><em>Completed</em></div><div class="donor"><span>PS</span><div><strong>Priya Singh</strong><small>Yesterday, 3:20 PM</small></div><b>+ ₹5,500</b><em class="pending">Pending</em></div><div class="donor"><span>AK</span><div><strong>Arjun Kapoor</strong><small>14 Jul, 11:05 AM</small></div><b>+ ₹25,000</b><em>Completed</em></div></div>
+        </article>
+        <article class="panel">
+          <div class="panel-heading"><div><p class="page-kicker">Coming up</p><h2>This week</h2></div></div>
+          <div class="event"><i class="fa-solid fa-stethoscope"></i><div><strong>Medical camp, Vrindavan</strong><p>Saturday · 9:00 AM</p></div><span>12 volunteers</span></div>
+          <div class="event"><i class="fa-solid fa-book-open"></i><div><strong>Education drive, Mathura</strong><p>Monday · 10:30 AM</p></div><span>8 volunteers</span></div>
+        </article>
+      </section>
+    </main>
+  </div>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
